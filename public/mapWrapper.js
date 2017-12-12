@@ -57,12 +57,17 @@ MapWrapper.prototype.addClickEvent = function () {
     };
 
     MapWrapper.prototype.westVirginia = function () {
+      this.addMarker({lat: 38.5976262 , lng: -80.454902 });
       console.log('take me home, west virigina');
+      const newPosition = new google.maps.LatLng(38.5976262, -80.454902);
+      this.googleMap.panTo(newPosition);
     };
 
-    MapWrapper.prototype.deleteAllMarkers = function () {
-      this.markers.forEach(function(marker){
-        marker.setMap(null);
-      });
-      this.markers =[];
-    };
+
+
+MapWrapper.prototype.deleteAllMarkers = function () {
+  this.markers.forEach(function(marker){
+    marker.setMap(null);
+  });
+  this.markers =[];
+};
