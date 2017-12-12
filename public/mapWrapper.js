@@ -61,6 +61,11 @@ MapWrapper.prototype.addClickEvent = function () {
       console.log('take me home, west virigina');
       const newPosition = new google.maps.LatLng(38.5976262, -80.454902);
       this.googleMap.panTo(newPosition);
+      this.googleMap.setZoom(10);
+      var infowindow = new google.maps.InfoWindow({
+        content: 'Take me home, west Virginia'
+      });
+      infowindow.open(this.googleMap, marker);
     };
 
 
