@@ -53,9 +53,11 @@ MapWrapper.prototype.addClickEvent = function () {
         marker.setAnimation(google.maps.Animation.BOUNCE);
 
         //this is how you remove all markers
-
-
       });
+    };
+
+    MapWrapper.prototype.westVirginia = function () {
+      console.log('take me home, west virigina');
     };
 
     MapWrapper.prototype.deleteAllMarkers = function () {

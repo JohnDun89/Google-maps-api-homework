@@ -16,6 +16,8 @@ const initialize = function () {
   const removeButton = document.querySelector('#delete')
   removeButton.addEventListener('click', mainMap.deleteAllMarkers.bind(mainMap));
 
+  const countryRoads = document.querySelector('#countryRoads')
+  countryRoads.addEventListener('click', mainMap.westVirginia.bind(mainMap));
 
 
 
